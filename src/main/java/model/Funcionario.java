@@ -42,7 +42,6 @@ public class Funcionario {
         Compra compra = new Compra();
         compra.setFuncionario(this);
         compra.addJogo(idJogo);
-
         return "Success e a compra gerada foi " + compra;
     }
 

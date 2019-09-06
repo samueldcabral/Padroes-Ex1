@@ -74,8 +74,10 @@ public class Compra {
         if(tempo == 0) return 0;
 
         float total = 0;
-        for(Jogo jogo  : jogos)
-            total += ( jogo.calcularTotal() * jogo.getQuantidadePessoas() * tempo);
+        for(Jogo jogo  : jogos){
+            total += ( (jogo.calcularTotal() * jogo.getQuantidadePessoas()) * tempo);
+        }
+
 
         return total;
     };

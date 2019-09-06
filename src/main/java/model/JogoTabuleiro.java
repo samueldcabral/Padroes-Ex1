@@ -42,7 +42,8 @@ public class JogoTabuleiro extends Jogo {
     //// Methods
     public float calcularTotal() {
         float totalPreDesconto = this.getPrecoAluguel() / this.getQuantidadePessoas();
-        return totalPreDesconto * (1 - (desconto / 100));
+        float descontoAplicado = (float) ( 1 - ((float) desconto / 100) );
+        return totalPreDesconto * descontoAplicado;
     }
 
     @Override
